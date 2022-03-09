@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+body {
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.theme-swith{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    top: 30px;
+    right: 30px;
+    transition: 0.45s;
+    cursor: pointer;
+}
+
+.darkIcon {
+    display: block;
+    fill: #f7f7f7;
+}
+
+.lightIcon {
+    display: none;
+    fill: black;
+}
+
+.theme-swith:active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.analogicDisplay {
+    display: flex;
+    height: 40vh;
+    width: 100vw;
+    margin-bottom: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.analogicDisplay>svg{
+    position: absolute;
+    width: 10px;
+    z-index: 1;
+}
+
+.hours {
+    position: absolute;
+    width: 4px;
+    height: 82px;
+    border-radius: 2px;
+    transform: rotate(0deg) translateY(-41px);
+}
+
+.hoursLight{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.678), black);
+}
+
+.hoursDark {
+    background-image: linear-gradient(#f7f7f7c4, #f7f7f7);
+}
+
+.min {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.678), black);
+    position: absolute;
+    width: 4px;
+    height: 162px;
+    border-radius: 2px;
+    transform: rotate(0deg) translateY(-81px);
+    transition: 0.5s;
+}
+
+.minLight {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.678), black);
+}
+
+.minDark {
+    background-image: linear-gradient(#f7f7f7c4, #f7f7f7);
+}
+
+.sec {
+    background-color: red;
+    position: absolute;
+    width: 2px;
+    height: 160px;
+    border-radius: 2px;
+    transform: rotate(0deg) translateY(-80px);
+    transition: 0.5s;
+}
+
+
+.digitalClock{
+    width: 100%;
+    text-align: center;
+    font-size: 72pt;
+    font-weight: 200;
+}
+
+.digitalClockDark {
+    color: #f7f7f7;
+}
+
+.day{
+    display: flex;
+    font-size: 18pt;
+    margin-top: 20px;
+    color: #BCBDC4;
+}
+
+.numDay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    font-size: 12pt;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+.numDayDark {
+    color: black;
+    background-color: #f7f7f7;
+    font-weight: 700;
+}
+
